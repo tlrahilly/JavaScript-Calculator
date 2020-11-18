@@ -1,0 +1,124 @@
+a{
+  color: #000;
+  text-decoration:
+}
+a:hover{
+  text-decoration: none;
+  color: #ff9300;
+}
+.row{
+  margin: 0;
+}
+section{
+  margin-top: 3em;
+}
+body{
+  background-image: url("images/purty_wood.png");
+}
+.col{
+ padding: 0 30px;
+}
+.menu-section{
+  margin-bottom: 3em;
+	background-color: khaki;
+	border-radius: 10px;
+	padding: 1em;
+}
+.menu-header{
+  text-align: center;
+  padding-bottom: 1em;
+}
+.menu-header h1{
+  font-size: 2em;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.menu-items {
+	border: 1px dashed #ff9300;
+	border-radius: 10px;
+	padding-top: 1em;
+	background-color: white;
+}
+.menu-items img{
+  width: 50%;
+  margin: 0 0 1em 3.5em;
+}
+.menu-item{
+  justify-content: space-between;
+  padding-bottom: .5em;
+}
+.menu-item h2{
+  font-size: 1.1em;
+  text-transform: uppercase;
+  width: 80%;
+}
+.menu-item p{
+  width: 20%;
+  text-align: right;
+}
+#bill{
+  margin: 0 8%;
+  padding: 5%;
+  background-color: #fff;
+}
+#listUl{
+  padding: 0;
+}
+.listItem{
+ justify-content: space-between;
+ margin-bottom: .5em;
+ font-style: italic;
+}
+.listItem > p{
+  margin-bottom: 0;
+}
+.listItem > button{
+	font-weight: normal;
+	background: none;
+	border: none;
+	float: right;
+	color: #000;
+	font-weight: 800;
+}
+.listItem > button:hover{
+  color: #ff9300;
+}
+#tipamt, #peopleamt{
+  width: 40%;
+  text-align: center;
+  margin-left: 1em;
+}
+.form{
+  padding: 0;
+}
+.form button{
+	background-color: lightgray;
+	border: none;
+	float: right;
+	color: white;
+	font-weight: bold;
+	border-radius: 5px;
+  text-transform: uppercase;
+  padding: 2px 10px;
+}
+.form button:hover{
+  background-color: #ff9300;
+}
+#billdiv{
+	margin-top: 16px;
+	border-top: 1px dashed black;
+	padding-top: 16px;
+}
+.bill-menu-item h2{
+   width: 60%;
+}
+.bill-menu-item .row{
+  width: 40%;
+  justify-content: flex-end;
+}
+.bill-menu-item p{
+  width: auto;
+}
+#each{
+  margin-left: .5em;
+}

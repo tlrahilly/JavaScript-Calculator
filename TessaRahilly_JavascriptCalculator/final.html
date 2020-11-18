@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css" media="screen" title="no title" charset="utf-8">
+    <title>Javascript Calculator</title>
+  </head>
+  <body>
+    <main class="row">
+      <!--left side: menu options-->
+      <section class="col menu">
+        <div class="menu-section">
+          <div class="menu-header">
+            <h1>Burgers</h1>
+          </div>
+          <div class="menu-items row">
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/cheese.jpg" alt="Cheeseburger" />
+              <a href="#" id="userInput" class="enter row menu-item" onclick="createListElement(userInput)">
+                <h2>Cheeseburger</h2>
+                <p>$4.79</p>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/swiss.jpg" alt="Mushroom & Swiss Burger" />
+              <a href="#" id="userInput1" class="enter row menu-item" onclick="createListElement(userInput1)">
+              <h2>Mushroom &#38; Swiss Burger</h2>
+              <p>$5.49</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/doublecheese.jpg" alt="Double Cheeseburger" />
+              <a href="#" id="userInput2" class="enter row menu-item" onclick="createListElement(userInput2)">
+              <h2> Double Cheesburger</h2>
+              <p>$6.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/bbq.jpg" alt="BBQ Burger" />
+              <a href="#" id="userInput3" class="enter row menu-item" onclick="createListElement(userInput3)">
+              <h2>BBQ Burger</h2>
+              <p>$5.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/veggie.jpg" alt="Veggie Burger" />
+              <a href="#" id="userInput4" class="enter row menu-item" onclick="createListElement(userInput4)">
+              <h2>Veggie Burger</h2>
+              <p>$5.79</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/slugburger.jpg" alt="Slugburger" />
+              <a href="#" id="userInput5" class="enter row menu-item" onclick="createListElement(userInput5)">
+              <h2>Slugburger</h2>
+              <p>$2.49</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-header">
+            <h1>Fries</h1>
+          </div>
+          <div class="menu-items row">
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/fries.jpg" alt="Fries" />
+              <a href="#" id="userInput6" class="enter row menu-item" onclick="createListElement(userInput6)">
+              <h2>Fries</h2>
+              <p>$1.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/chilifries.jpg" alt="Chili Cheese Fries" />
+              <a href="#" id="userInput7" class="enter row menu-item" onclick="createListElement(userInput7)">
+              <h2>Chili Cheese Fries</h2>
+              <p>$2.99</p>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="menu-section">
+          <div class="menu-header">
+            <h1>Shakes and Drinks</h1>
+          </div>
+          <div class="menu-items row">
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/milkshake.jpg" alt="Milkshake" />
+              <a href="#" id="userInput8" class="enter row menu-item" onclick="createListElement(userInput8)">
+              <h2>Milkshakes</h2>
+              <p>$3.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/lemonade.jpg" alt="Lemonade" />
+              <a href="#" id="userInput9" class="enter row menu-item" onclick="createListElement(userInput9)">
+              <h2>Fresh-Squeezed Lemonade</h2>
+              <p>$2.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/icedtea.jpg" alt="Iced Tea" />
+              <a href="#" id="userInput10" class="enter row menu-item" onclick="createListElement(userInput10)">
+              <h2>Iced Tea</h2>
+              <p>$1.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/soda.jpg" alt="Soda" />
+              <a href="#" id="userInput11" class="enter row menu-item" onclick="createListElement(userInput11)">
+              <h2>Soda</h2>
+              <p>$1.99</p>
+              </a>
+            </div>
+            <div class="col-sm-12 col-md-6" >
+              <img src="images/water.jpg" alt="Water" />
+              <a href="#" id="userInput12" class="enter row menu-item" onclick="createListElement(userInput12)">
+              <h2>Bottled Water</h2>
+              <p>$1.99</p>
+            </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--right side: calculator-->
+      <section class="col">
+        <div id="bill">
+          <div class="menu-header">
+            <h1>Bill</h1>
+          </div>
+          <div class="bill-ul">
+            <ul id="listUl">
+            </ul>
+          </div>
+          <div class="row menu-item">
+            <h2>SubTotal</h2>
+            <div class="row">
+              <p>$</p>
+              <p id="subTotal">0.00</p>
+            </div>
+          </div>
+
+      <div class="">
+        <form class="row">
+          <div class="col-10 form">
+            <label for="">Tip:</label>
+            <input type="number" id="tipamt" placeholder="%">
+            <input type="number" id="peopleamt" placeholder="# people">
+          </div>
+          <div class="col-2 form">
+            <button type="button" id="calculate">Submit</button>
+          </div>
+        </form>
+      </div>
+      <div id="billdiv">
+        <div class="row menu-item bill-menu-item">
+          <h2>Tip</h1>
+            <div class="row">
+              <p>$</p>
+              <p id="tip"></p>
+              <p id="each">each</p>
+            </div>
+        </div>
+        <div class="row menu-item">
+          <h2>Total</h1>
+            <div class="row">
+              <p>$</p>
+              <p id="totalamt"></p>
+            </div>
+        </div>
+        </div>
+        </div>
+      </section>
+    </main>
+  <!--Javascript goes below-->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="finaltip.js">
+
+  </script>
+  </body>
+</html>
